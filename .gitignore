@@ -1,2 +1,5 @@
-# Dependency directory
-node_modules
+node_modules/
+bower_components/
+tmp
+.idea
+.DS_Store
