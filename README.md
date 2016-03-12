@@ -1,4 +1,18 @@
-# Instructions
+## Address Book
+
+The goal of this assignment is to create a address book using AngularJS. Contacts are listed on the left hand side, are searchable, and can be toggled to view their full details. Additionally, contacts can be editable in the main view.
+
+Please install all node modules with this command:
+> npm install
+
+Run the server by using this command:
+> npm start
+
+Use the following command to run tests:
+> npm test
+
+--
+## Instructions
 
 1. Build an address book using the attached wireframe. All contacts should be
   1. listed on the left-hand side,
