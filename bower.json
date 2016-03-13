@@ -10,7 +10,7 @@
   "private": true,
   "dependencies": {
     "angular": "~1.4.7",
-    "angular-route": "~1.4.7",
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "angular-ui-router": "~0.2.18"
   }
 }

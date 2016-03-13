@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 gulp.task('jshint', ['clean'], function() {
   return gulp.src(['./public/**/*.js', './test/**/*.js'])
     .pipe(jshint())
+    .pipe(jshint.reporter('default'))
     .pipe(jshint.reporter('fail'))
 });
 
