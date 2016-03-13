@@ -4,7 +4,7 @@ var config = require('./config');
 
 var app = connect();
 
-app.use(serveStatic(__dirname + '/public'));
+app.use(serveStatic(__dirname + '/dist'));
 app.use('/bower_components', serveStatic(__dirname + '/bower_components'));
 
 app.listen(config.port);
