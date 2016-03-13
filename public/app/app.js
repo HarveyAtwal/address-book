@@ -7,17 +7,26 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('index', {
         url: '/',
+        resolve: { 
+          sharedData: function() { 
+            return { contact: null }; 
+          } 
+        },
         views: {
           '' : { 
             templateUrl: '/app/partials/home.html' 
           },
 
           'contactList@index': { 
-            templateUrl: '/app/partials/contact_list.html'
+            templateUrl: '/app/partials/contact_list.html',
+            controller: 'ContactListCtrl',
+            controllerAs: 'contactList'
           },
 
           'mainView@index': {
-            templateUrl: '/app/partials/read_contact.html'
+            templateUrl: '/app/partials/read_contact.html',
+            controller: 'ContactReadCtrl',
+            controllerAs: 'contactRead'
           }
         }
     });

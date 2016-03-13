@@ -1,8 +1,8 @@
 <h2>All Contacts</h2>
 <input placeholder="Search" ng-model="searchText">
 
-<div ng-controller="ContactListCtrl as contactList">
+<div>
   <div ng-repeat="contact in contactList.contacts | filter:searchText">
-    <span>{{contact.lastname + ', ' + contact.firstname}}</span>
+    <span ng-click="changeContact(contact)">{{contact.lastname + ', ' + contact.firstname}}</span>
   </div>
 </div>
