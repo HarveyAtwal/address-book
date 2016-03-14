@@ -11,7 +11,6 @@ Note: that npm will automatically start installing bower components after the no
 
 Run the server by using this command and view in browser at `http://localhost:8080`:
 > npm start
-
 ```
 Note: Prior to starting the node server, npm will automatically execute the build process
 ```
