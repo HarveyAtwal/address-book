@@ -1,8 +1,12 @@
-<h2>All Contacts</h2>
-<input placeholder="Search" ng-model="searchText">
+<div class="text-center">
+  <h3>All Contacts</h3>
+  <input class="form-control" placeholder="Search" ng-model="searchText">
+</div>
 
-<div>
+<div class="contact-list-container">
   <div ng-repeat="contact in contactList.contacts | filter:searchText">
-    <span ng-click="changeContact(contact)">{{contact.lastname + ', ' + contact.firstname}}</span>
+    <div class="contact-container" ng-class="{'active': contactList.selectedContact === contact}" ng-click="changeContact(contact)">
+      <span>{{contact.lastname + ', ' + contact.firstname}}</span>
+    </div>
   </div>
 </div>

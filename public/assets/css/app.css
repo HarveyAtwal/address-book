@@ -1,3 +1,27 @@
 body {
-  padding-top: 20px;
+  padding: 2em;
+}
+
+.left-view {
+  background-color: #cccccc;
+}
+
+.contact-widget {
+  background-color: #eeeeee;
+}
+
+.contact-list-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact-container {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-top: solid 1px #aaaaaa;
+  cursor: pointer;
+}
+
+.contact-container.active {
+  background-color: #bbbbbb;
 }

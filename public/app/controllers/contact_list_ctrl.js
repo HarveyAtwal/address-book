@@ -11,5 +11,6 @@ angular.module("app").controller('ContactListCtrl', function($scope, sharedData,
 
   $scope.changeContact = function(contact) {
     sharedData.contact = contact;
+    self.selectedContact = contact;
   };
 });
