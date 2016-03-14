@@ -2,6 +2,10 @@ body {
   padding: 2em;
 }
 
+h1 {
+  margin-top: 0px;
+}
+
 .left-view {
   background-color: #cccccc;
 }
@@ -24,4 +28,8 @@ body {
 
 .contact-container.active {
   background-color: #bbbbbb;
+}
+
+.main-view {
+  margin-top: 1em;
 }
