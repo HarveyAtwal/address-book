@@ -2,6 +2,10 @@ body {
   padding: 2em;
 }
 
+.body, .html {
+  height:100%;
+}
+
 h1 {
   margin-top: 0px;
 }
@@ -10,8 +14,9 @@ h1 {
   background-color: #cccccc;
 }
 
-.contact-widget {
+.address-book-widget {
   background-color: #eeeeee;
+  overflow: hidden;
 }
 
 .contact-list-container {
@@ -30,6 +35,17 @@ h1 {
   background-color: #bbbbbb;
 }
 
+.left-view {
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
+
 .main-view {
   margin-top: 1em;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
+
+.btn {
+  margin: .5em;
 }

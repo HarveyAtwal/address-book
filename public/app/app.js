@@ -14,7 +14,7 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
         },
         views: {
           '' : { 
-            templateUrl: '/app/partials/home.html' 
+            templateUrl: '/app/partials/address_book.html' 
           },
 
           'contactListView@index': { 
@@ -40,7 +40,9 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
 
     .state('index.edit', {
       url: 'edit',
-      templateUrl: '/app/partials/edit_contact.html'
+      templateUrl: '/app/partials/edit_contact.html',
+      controller: 'ContactEditCtrl',
+      controllerAs: 'contactEdit'
     });
 
 });
