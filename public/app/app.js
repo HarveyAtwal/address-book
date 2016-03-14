@@ -1,9 +1,10 @@
 angular.module('app', ['ui.router']);
 
 angular.module('app').config(function($stateProvider, $urlRouterProvider) {
-  
   $urlRouterProvider.otherwise('/');
-  
+
+  // Create state that contains a parent view that holds two views.
+  // Pass the sharedData between each child view
   $stateProvider
     .state('index', {
         url: '/',
@@ -31,6 +32,7 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
         }
     })
 
+    // Create two additional states to change the partial depending on the url
     .state('index.contact', {
       url: 'contact',
       templateUrl: '/app/partials/read_contact.html',

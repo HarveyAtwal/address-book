@@ -4,23 +4,27 @@
   "description": "Change Heroes Address Book Test App",
   "scripts": {
     "postinstall": "bower install",
-    "test": "echo \"Error: no test specified\" && exit 1",
 
     "prestart": "gulp",
-    "start": "node server.js"
+    "start": "node server.js",
+
+    "test": "karma start test/karma.conf.js"
   },
   "author": "atwalharvey93@gmail.com",
   "license": "ISC",
   "dependencies": {
     "connect": "^3.4.0",
-    "serve-static": "^1.10.0",
-    "karma": "^0.12.16"
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.12.16",
+    "karma-jasmine": "^0.3.7",
+    "serve-static": "^1.10.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.0.0",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "karma-chrome-launcher": "^0.2.2"
   }
 }
