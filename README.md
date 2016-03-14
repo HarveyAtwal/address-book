@@ -3,44 +3,26 @@
 The goal of this assignment is to create an address book using AngularJS. Contacts are listed on the left hand side, are searchable, and can be toggled to view their full details. Additionally, contacts can be editable in the main view.
 
 Please install all node modules with this command:
-> npm install
 
-Run the server by using this command:
+> npm install
+```
+Note: that npm will automatically start installing bower components after the node modules are installed.
+```
+
+Run the server by using this command and view in browser at `http://localhost:8080`:
 > npm start
+
+```
+Note: Prior to starting the node server, npm will automatically execute the build process
+```
 
 Use the following command to run tests:
 > npm test
 
---
-## Instructions
-
-1. Build an address book using the attached wireframe. All contacts should be
-  1. listed on the left-hand side,
-  2. be searchable,
-  3. and can be toggled to view their full details in the main view.
-  
-  We are not too concerned about the styling of your address book. Try to make it look as close to the mockup as you can, but no points will be deducted if you cannot have styling match
-
-2. Contacts should be editable in the main view.
-
-3. Use Angular filters, services/factories, directives, and some built-in directives where appropriate.
-
-4. BONUS: Use the ng-router. (See Dependencies #2)
-
-5. BONUS++: Provide Jasmine/Karma tests for all of your components.
-
-6. Send us a link to your repo to view it. DO NOT create a fork of this repo. Instead, make a copy of it. 
-
-
-NOTE: use the contacts.json file in the public folder to populate the Address Book.
+Use the following command to start the build process
+> gulp
 
 ## Dependencies
-1. Angular 1.4.7
-2. Angular Router (https://code.angularjs.org/1.4.7/docs/api/ngRoute)
-
-## Installation
-
-1. Install Node and NPM
-2. Run npm install to install the dependencies.
-3. Start the server: `node server.js`
-4. View in browser at `http://localhost:8080`
+1. Npm / Node
+2. Karma
+3. Gulp
